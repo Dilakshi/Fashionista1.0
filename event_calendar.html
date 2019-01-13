@@ -5,7 +5,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Single - Standout</title>
+    <title>Events - Fashionista</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -81,34 +81,36 @@
 
         <!-- page header
         ================================================== -->
-        <div class="page-header page-header--single" style="background-image:url(images/blog/blog-bg-01.jpg)">
+        <!-- <div class="page-header page-header--single" style="background-image:url(images/blog/blog-bg-01.jpg)">
 
             <div class="row page-header__content">
-                <div class="col-full">
-
-                    <h1 class="display-1">
-                        Event Calendar.
-                    </h1>                    
-                </div>
+                <h1 class="display-1">
+                    Event Calendar.
+                </h1>               
             </div>
 
-        </div> <!-- end page-header -->
-
+        </div> -->
+        
 
         <!-- blog content
         ================================================== -->
         <div class="blog-content-wrap">
+            
+            <div class="row page-header__content page-header--small" >
+                <h1 class="display-1">
+                    Event Calendar
+                </h1>               
+            </div>
 
             <div class="row blog-content">
+
                 <div class="col-full blog-content__main">
-                    
                     <div mbsc-page class="demo-event-popover">
                         <div id="demo-event-popover"></div>
                     </div>
+                </div>
 
-                </div><!-- end blog-content__main -->
             </div> <!-- end blog-content -->
-
 
         </div> <!-- end blog-content-wrap -->
 
@@ -203,8 +205,9 @@
             var inst = $('#demo-event-popover').mobiscroll().eventcalendar({
                 
                 lang: 'en',  // Specify language like: lang: 'pl' or omit setting to use default
-                theme: 'ios',              // Specify theme like: theme: 'ios' or omit setting to use default
-                display: 'inline'          // Specify display mode like: display: 'bottom' or omit setting to use default
+                theme: 'ios-dark',              // Specify theme like: theme: 'ios' or omit setting to use default
+                display: 'inline',          // Specify display mode like: display: 'bottom' or omit setting to use default
+                touchUi: true
             }).mobiscroll('getInst');
         
             mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', function (events) {
