@@ -4739,4 +4739,9 @@ body.search-is-visible {
 
 }
 
+.mbsc-page * {
+  box-sizing: unset;
+  border-radius: 15px;
+}
+
 /*# sourceMappingURL=main.css.map */
