@@ -23,6 +23,8 @@
     ================================================== -->
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="js/rate.js"></script>
 
 </head>
 
@@ -86,7 +88,7 @@
     ================================================== -->
     <div class="blog-content-wrap">
         
-        <div class="row page-header__content page-header--small" >
+        <div class="row" >
             <h1 class="display-1">
                 Designers
             </h1>               
@@ -95,42 +97,43 @@
         <div class="row blog-content">
 
             <div class="col-full blog-content__main">
-                    <ul data-role="listview" data-split-icon="gear" data-split-theme="a" data-inset="true">
-                                <li><a href="#">
-                                    <img src="images/gallery/designers/3.jpg">
-                                <h2>Broken Bells</h2>
-                                <p>Accessory Designer</p></a>
-                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
-                                </li>
+                    <ul data-role="listview"  data-filter="true" data-filter-placeholder="Search Designers..." data-split-icon="info" data-split-theme="a" data-autodividers="true" data-inset="true">
                                 <li><a href="#">
                                     <img src="images/gallery/designers/9.jpg">
                                 <h2>Amenda P</h2>
                                 <p>Fashion Designer @ Vogue</p></a>
-                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                                    
+                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">View More</a>
+                                </li>
+                                <li><a href="#">
+                                    <img src="images/gallery/designers/3.jpg">
+                                <h2>Broken Bells</h2>
+                                <p>Accessory Designer</p></a>
+                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">View More</a>
                                 </li>
                                 <li><a href="#">
                                     <img src="images/gallery/designers/4.jpg">
-                                <h2>Wolfgang Amadeus Phoenix</h2>
-                                <p>Phoenix</p></a>
-                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                                <h2>Efgang Amadeus Phoenix</h2>
+                                <p>Fashion Designer @ GUCCI</p></a>
+                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">View More</a>
                                 </li>
                                 <li><a href="#">
                                     <img src="images/gallery/designers/1.jpg">
                                 <h2>Gerrf P</h2>
                                 <p>Italian Fashion Designer</p></a>
-                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">View More</a>
                                 </li>
                                 <li><a href="#">
                                     <img src="images/gallery/designers/2.jpg">
                                 <h2>Karl Lagerfeld</h2>
-                                <p>London</p></a>
-                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+                                <p>UK Fashion Designer</p></a>
+                                    <a href="#info" data-rel="popup" data-position-to="window" data-transition="pop">View More</a>
                                 </li>
                             </ul>
                             <div data-role="popup" id="info" data-theme="a" data-overlay-theme="b" class="ui-content" style="max-width:340px; padding-bottom:2em;">
                                 <h3>Amenda P</h3>
-                            <p></p>
-                                <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-inline ui-mini">Cancel</a>
+                                <p>OBE is an English fashion designer. She is a daughter of American photographer, musician, and animal rights activist Linda McCartney and former Beatles member Sir Paul McCartney.</p>
+                                <a href="index.html" data-rel="back" class="ui-shadow ui-btn ui-corner-all ui-btn-b ui-btn-inline ui-mini">OK</a>
                             </div>
             </div>
 
@@ -213,5 +216,20 @@
     <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        $("#rateBox").rate({
+            length: 5,
+            value: 3.5,
+            readonly: false,
+            size: '48px',
+            selectClass: 'fxss_rate_select',
+            incompleteClass: 'fxss_rate_no_all_select',
+            customClass: 'custom_class',
+            callback: function(object){
+                console.log(object)
+            }
+        });
+    </script>
 
 </body>
