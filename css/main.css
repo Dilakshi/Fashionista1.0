@@ -3776,6 +3776,12 @@ html.no-csstransitions .home-content__main {
   min-height: 50.4rem;
 }
 
+.page-header--small {
+  padding-top: 4.2rem;
+  padding-bottom: 2.5rem;
+  text-align: center;
+}
+
 .page-header--single .page-header__content {
   max-width: 900px;
 }
