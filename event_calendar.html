@@ -24,6 +24,7 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
+
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
@@ -100,7 +101,11 @@
 
             <div class="row blog-content">
                 <div class="col-full blog-content__main">
+                    
+                    <div mbsc-page class="demo-event-popover">
     
+                        <div id="demo-event-popover"></div>
+                    </div>
                     
 
                 </div><!-- end blog-content__main -->
@@ -182,7 +187,33 @@
     <!-- Java Script
     ================================================== -->
     <script src="js/jquery-3.2.1.min.js"></script>
+    
+    <!-- Mobiscroll JS and CSS Includes -->
+    <link rel="stylesheet" href="css/mobiscroll.jquery.min.css">
+    <script src="js/mobiscroll.jquery.min.js"></script>
+    
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        mobiscroll.settings = {
+            theme: 'ios',
+            lang: 'en'
+        };
+    
+        $(function () {
+        
+            var inst = $('#demo-event-popover').mobiscroll().eventcalendar({
+                
+                lang: 'en',  // Specify language like: lang: 'pl' or omit setting to use default
+                theme: 'ios',              // Specify theme like: theme: 'ios' or omit setting to use default
+                display: 'inline'          // Specify display mode like: display: 'bottom' or omit setting to use default
+            }).mobiscroll('getInst');
+        
+            mobiscroll.util.getJson('https://trial.mobiscroll.com/events/', function (events) {
+                inst.setEvents(events);
+            }, 'jsonp');
+        
+        });
+    </script>
 
 </body>
