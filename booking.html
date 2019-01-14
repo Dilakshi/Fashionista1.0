@@ -13,9 +13,12 @@
 
     <!-- CSS
     ================================================== -->
+    
+    <link rel = "stylesheet" href = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
+	
 
     <!-- script
     ================================================== -->
@@ -87,20 +90,24 @@
             <h2>Paul Gaultier Spring Collection</h2>               
         </div>
 
-        <div class="row">
-            <div class="col-six">
-                <img height="100" class="pull-left" alt="Paul-Gaultier-Spring-Collection" src="images/gallery/Spring_5.jpg"></a>
+        <div id="demo" class="md-flight-booking" mbsc-form>
+
+            <div class="mbsc-form-group">
+                <label>
+                    No of Tickets
+                    <span class="mbsc-desc">One user can buy maximum 5 tickets only</span>
+                    <input type="number" data-role="stepper" max="5" data-val="left" />
+                </label>
             </div>
-            <div class="col-six">
-                <p>Jean-Paul Gaultier’s new collection is exactly that – a couture in a literal sense. It is clearly inspired by the 40s, sometimes bright and flowery, but always with the designer’s special flair</p>
-                <div class="ui-grid-b">
-                    <div class="ui-grid-a"><b>Date :</b>  01/20/2019 </div>
-                    <div class="ui-grid-b"><b>Time :</b>  18:00 GMT </div>
-                    <div class="ui-grid-c"><b>Venue :</b>  TNX Studio </div>
-                </div>
+            <div class="mbsc-form-group">
+                <label><b>Total</b></label>
+                <label>$50</label>
+                <label>Coupon code
+                    <input type="text" max="10" data-val="left"/></label> 
+                </label>
             </div>
         </div>
-        
+        ss
 
         <div class="row page-header--small">
             <div class="col-full">
@@ -181,8 +188,9 @@
 
     <!-- Java Script
     ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-
+    <!-- <script src="js/jquery-3.2.1.min.js"></script> -->
+    <script src = "https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src = "https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
