@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+	<title>SignUp - Fashionista</title>
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+    ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
+
+</head>
+
+<body id="top">
+
+    <div id="preloader">
+        <div id="loader"></div>
+    </div>
+
+
+    <!-- header 
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="header-logo">
+            <a class="site-logo" href="index.html">
+                <img src="images/logo_text.png" alt="Homepage" style="height:100px">
+            </a>
+        </div>
+
+        <nav class="row header-nav-wrap wide">
+            <ul class="header-main-nav">
+                <li><a class="smoothscroll" href="event_calendar.html" title="events">Book an event</a></li>
+                <li><a class="smoothscroll" href="" title="features">Gallery</a></li>
+                <li><a class="smoothscroll" href="designer_list.html" title="pricing">Designers</a></li>
+                <li><a class="smoothscroll" href="" title="pricing">Products</a></li>
+                <li><a class="smoothscroll" href="" title="pricing">-game-</a></li>
+                <li><a class="smoothscroll" href="" title="events">My Account</a></li>
+                
+                <li><a class="smoothscroll" href="" title="about">Who we are</a></li>
+                <li><a href="blog.html" title="blog">Blog</a></li>	
+            </ul>
+
+            <ul class="header-social">
+                <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+            </ul>
+        </nav>
+
+        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+    
+    </header> <!-- end header -->
+
+
+
+    <!-- page header
+    ================================================== -->
+    <!-- <div class="page-header page-header--single" style="background-image:url(images/blog/blog-bg-01.jpg)">
+
+        <div class="row page-header__content">
+            <h1 class="display-1">
+                Event Calendar.
+            </h1>               
+        </div>
+
+    </div> -->
+        
+
+    <!-- blog content
+    ================================================== -->
+    <div class="blog-content-wrap">
+        
+        <div class="row page-header__content page-header--small" >
+            <h1 class="display-1">
+                Sign Up
+               </h1>             
+        </div>
+
+        <div class="row blog-content">
+
+            <!--user logo 
+            <div id="userlogo" style="text-align:center;">
+                <img src="..//Fashionista1.0/images/user_logo.png" alt="" width="50%" height="auto"/>                    
+            </div>-->
+
+            <!-- user login form -->
+            <div class="row page-header--small">
+                <div class="col-full">
+                        <form class="modal-content">
+                            <div class="container">
+                                <p>Please fill in this form to create an account.</p>
+                                <hr>
+                                <label for="email"><b>Email</b></label>
+                                <input style="width: 100%" type="text" placeholder="Enter Email" name="email" required>
+                                
+                                <label for="psw"><b>Password</b></label>
+                                <input style="width: 100%" type="password" placeholder="Enter Password" name="psw" required>
+                            
+                                <label for="psw-repeat"><b>Repeat Password</b></label>
+                                <input style="width: 100%" type="password" placeholder="Repeat Password" name="psw-repeat" required>
+                                
+                                <label>
+                                    <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                                </label>
+                            
+                                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+                            
+                                <div class="clearfix">
+                                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                                    <button type="submit" class="signupbtn">Sign Up</button>
+                                </div>
+
+                                <p>Sign Up or Sign In with one of your existing account.</p>
+                                <div>
+                                    
+                                    <a href="https://www.facebook.com/" data-role="button"><img src="../Fashionista1.0/images/facebook_icon.png" /></a>
+                                    <a href="https://www.instagram.com/" data-role="button"><img src="../Fashionista1.0/images/instagram_icon.png" /></a>
+                                    <a href="https://twitter.com" data-role="button"><img src="../Fashionista1.0/images/twitter_icon.png" /></a>
+                                    <a href="https://www.pinterest.com/" data-role="button"><img src="../Fashionista1.0/images/pinterest_icon.png" /></a>
+                                    <a href="https://plus.google.com/" data-role="button"><img src="../Fashionista1.0/images/google_plus_icon.png" /></a>
+                                    
+                                  </div>
+                            </div>
+                        </form>         
+                </div>
+            </div>
+
+        </div> <!-- end blog-content -->
+
+    </div> <!-- end blog-content-wrap -->
+
+
+
+
+    <!-- footer
+    ================================================== -->
+    <footer class="s-footer footer">
+
+        <div class="row footer__top">
+            <div class="col-six md-full">
+                <h1 class="display-2">
+                    Let's Stay In Touch.
+                </h1>
+                <p class="lead">
+                    Subscribe for updates, special offers and more.
+                </p>
+            </div>
+            <div class="col-six md-full footer__subscribe end">
+                <div class="subscribe-form">
+                    <form id="mc-form" class="group" novalidate="true">
+
+                        <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+            
+                        <input type="submit" name="subscribe" value="Sign Up">
+            
+                        <label for="mc-email" class="subscribe-message"></label>
+            
+                    </form>
+                </div>
+            </div>
+        </div> <!-- end footer__top -->
+
+        <div class="row footer__bottom">
+            
+            <div class="col-six tab-full end">
+                <!-- <ul class="footer__site-links">
+                    <li><a href="index.html#home" title="intro">Intro</a></li>
+                    <li><a href="index.html#about" title="about">About</a></li>
+                    <li><a href="index.html#features" title="features">Features</a></li>
+                    <li><a href="index.html#pricing" title="pricing">Pricing</a></li>
+                    <li><a href="blog.html" title="blog">Blog</a></li>	
+                </ul> -->
+
+                <p class="footer__contact">
+                    Do you have a question? Send us a word: <br>
+                    <a href="mailto:#0" class="footer__mail-link">support@standout.com</a>
+                </p>
+
+                <ul class="footer__social">
+                    <li><a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                    <li><a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                </ul>
+
+                <div class="cl-copyright">
+                    <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+                </span>
+                </div>
+            </div>
+
+        </div> <!-- end footer__bottom -->
+
+        <div class="go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+
+    </footer> <!-- end s-footer -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+ 
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+ 
+
+</body>
